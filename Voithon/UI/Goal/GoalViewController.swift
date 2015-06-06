@@ -10,6 +10,10 @@ import UIKit
 
 class GoalViewController: UIViewController {
 
+    @IBOutlet weak var box: UIView!
+    @IBOutlet weak var messageLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

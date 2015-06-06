@@ -15,4 +15,7 @@ extension UIColor {
     class func VoithonRed() -> UIColor {
         return UIColor.rgb(r: 159, g: 32, b: 36, alpha: 1.0)
     }
+    class func VoithonRedDark() -> UIColor {
+        return UIColor.rgb(r: 81, g: 17, b: 19, alpha: 1.0)
+    }
 }

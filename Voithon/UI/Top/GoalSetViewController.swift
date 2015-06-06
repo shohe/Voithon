@@ -16,6 +16,7 @@ class GoalSetViewController: UIViewController, UIPickerViewDelegate {
     var goalPickerValues = ["0","1","2","3","4","5","6","7","8","9"]
     var goalPickerThreeValues = ["0","5"]
     
+    @IBOutlet weak var runButton: UIButton!
     @IBOutlet weak var GoalPickerOne: UIPickerView!
     @IBOutlet weak var GoalPickerTwo: UIPickerView!
     @IBOutlet weak var GoalPickerThree: UIPickerView!
@@ -34,7 +35,10 @@ class GoalSetViewController: UIViewController, UIPickerViewDelegate {
     }
     
     @IBAction func beginRun(sender: AnyObject) {
-        
+        // 画面遷移
+        let runViewController = self.storyboard?.instantiateViewControllerWithIdentifier("RunViewController") as! RunViewController
+        runViewController.goleDistance = (Float(pickerValueOne*10)) + Float(pickerValueTwo) + (Float(pickerValueThree)/10)
+        self.presentViewController(runViewController, animated: true, completion: nil)
     }
 }
 
@@ -59,6 +63,15 @@ extension GoalSetViewController: UIPickerViewDataSource {
         case 2: pickerValueTwo = row
         case 3: pickerValueThree = row*5
         default: break
+        }
+        
+        let check = (Float(pickerValueOne*10)) + Float(pickerValueTwo) + (Float(pickerValueThree)/10)
+        if check > 0 {
+            runButton.enabled = true
+            runButton.backgroundColor = UIColor.VoithonRed()
+        } else {
+            runButton.enabled = false
+            runButton.backgroundColor = UIColor.VoithonRedDark()
         }
     }
     
