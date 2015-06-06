@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		090E2B991B22E9B7008F9F1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E2B981B22E9B7008F9F1A /* AppDelegate.swift */; };
+		090E2B9E1B22E9B7008F9F1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 090E2B9C1B22E9B7008F9F1A /* Main.storyboard */; };
+		090E2BA01B22E9B7008F9F1A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 090E2B9F1B22E9B7008F9F1A /* Images.xcassets */; };
+		090E2BA31B22E9B7008F9F1A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 090E2BA11B22E9B7008F9F1A /* LaunchScreen.xib */; };
+		090E2BAF1B22E9B7008F9F1A /* VoithonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E2BAE1B22E9B7008F9F1A /* VoithonTests.swift */; };
+		090E2BBA1B22EA69008F9F1A /* RegistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E2BB91B22EA69008F9F1A /* RegistViewController.swift */; };
+		090E2BBD1B22EB72008F9F1A /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 090E2BBC1B22EB72008F9F1A /* test.jpg */; };
+		090E2BC51B22F981008F9F1A /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E2BC41B22F981008F9F1A /* HistoryViewController.swift */; };
+		090E2BC71B22FACB008F9F1A /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E2BC61B22FACB008F9F1A /* TopViewController.swift */; };
+		090E2BC91B22FB51008F9F1A /* GoalSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E2BC81B22FB51008F9F1A /* GoalSetViewController.swift */; };
+		090E2BCC1B230E95008F9F1A /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E2BCB1B230E95008F9F1A /* UIColorExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		090E2BA91B22E9B7008F9F1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 090E2B8B1B22E9B7008F9F1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 090E2B921B22E9B7008F9F1A;
+			remoteInfo = Voithon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		090E2B931B22E9B7008F9F1A /* Voithon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voithon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		090E2B971B22E9B7008F9F1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		090E2B981B22E9B7008F9F1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		090E2B9D1B22E9B7008F9F1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		090E2B9F1B22E9B7008F9F1A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		090E2BA21B22E9B7008F9F1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		090E2BA81B22E9B7008F9F1A /* VoithonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoithonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		090E2BAD1B22E9B7008F9F1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		090E2BAE1B22E9B7008F9F1A /* VoithonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoithonTests.swift; sourceTree = "<group>"; };
+		090E2BB91B22EA69008F9F1A /* RegistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegistViewController.swift; path = Voithon/UI/Regist/RegistViewController.swift; sourceTree = SOURCE_ROOT; };
+		090E2BBC1B22EB72008F9F1A /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		090E2BC41B22F981008F9F1A /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		090E2BC61B22FACB008F9F1A /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		090E2BC81B22FB51008F9F1A /* GoalSetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalSetViewController.swift; sourceTree = "<group>"; };
+		090E2BCB1B230E95008F9F1A /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		090E2B901B22E9B7008F9F1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090E2BA51B22E9B7008F9F1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		090E2B8A1B22E9B7008F9F1A = {
+			isa = PBXGroup;
+			children = (
+				090E2B951B22E9B7008F9F1A /* Voithon */,
+				090E2BAB1B22E9B7008F9F1A /* VoithonTests */,
+				090E2B941B22E9B7008F9F1A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		090E2B941B22E9B7008F9F1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				090E2B931B22E9B7008F9F1A /* Voithon.app */,
+				090E2BA81B22E9B7008F9F1A /* VoithonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		090E2B951B22E9B7008F9F1A /* Voithon */ = {
+			isa = PBXGroup;
+			children = (
+				090E2BB81B22E9ED008F9F1A /* UI */,
+				090E2B981B22E9B7008F9F1A /* AppDelegate.swift */,
+				090E2B9C1B22E9B7008F9F1A /* Main.storyboard */,
+				090E2B9F1B22E9B7008F9F1A /* Images.xcassets */,
+				090E2BA11B22E9B7008F9F1A /* LaunchScreen.xib */,
+				090E2B961B22E9B7008F9F1A /* Supporting Files */,
+			);
+			path = Voithon;
+			sourceTree = "<group>";
+		};
+		090E2B961B22E9B7008F9F1A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				090E2B971B22E9B7008F9F1A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		090E2BAB1B22E9B7008F9F1A /* VoithonTests */ = {
+			isa = PBXGroup;
+			children = (
+				090E2BAE1B22E9B7008F9F1A /* VoithonTests.swift */,
+				090E2BAC1B22E9B7008F9F1A /* Supporting Files */,
+			);
+			path = VoithonTests;
+			sourceTree = "<group>";
+		};
+		090E2BAC1B22E9B7008F9F1A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				090E2BAD1B22E9B7008F9F1A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		090E2BB81B22E9ED008F9F1A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				090E2BCA1B230E54008F9F1A /* Extension */,
+				090E2BBF1B22F2D7008F9F1A /* Top */,
+				090E2BBE1B22F1E1008F9F1A /* Regist */,
+				090E2BBB1B22EB4F008F9F1A /* Resouces */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		090E2BBB1B22EB4F008F9F1A /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				090E2BBC1B22EB72008F9F1A /* test.jpg */,
+			);
+			path = Resouces;
+			sourceTree = "<group>";
+		};
+		090E2BBE1B22F1E1008F9F1A /* Regist */ = {
+			isa = PBXGroup;
+			children = (
+				090E2BB91B22EA69008F9F1A /* RegistViewController.swift */,
+			);
+			path = Regist;
+			sourceTree = "<group>";
+		};
+		090E2BBF1B22F2D7008F9F1A /* Top */ = {
+			isa = PBXGroup;
+			children = (
+				090E2BC41B22F981008F9F1A /* HistoryViewController.swift */,
+				090E2BC61B22FACB008F9F1A /* TopViewController.swift */,
+				090E2BC81B22FB51008F9F1A /* GoalSetViewController.swift */,
+			);
+			path = Top;
+			sourceTree = "<group>";
+		};
+		090E2BCA1B230E54008F9F1A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				090E2BCB1B230E95008F9F1A /* UIColorExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		090E2B921B22E9B7008F9F1A /* Voithon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 090E2BB21B22E9B7008F9F1A /* Build configuration list for PBXNativeTarget "Voithon" */;
+			buildPhases = (
+				090E2B8F1B22E9B7008F9F1A /* Sources */,
+				090E2B901B22E9B7008F9F1A /* Frameworks */,
+				090E2B911B22E9B7008F9F1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Voithon;
+			productName = Voithon;
+			productReference = 090E2B931B22E9B7008F9F1A /* Voithon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		090E2BA71B22E9B7008F9F1A /* VoithonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 090E2BB51B22E9B7008F9F1A /* Build configuration list for PBXNativeTarget "VoithonTests" */;
+			buildPhases = (
+				090E2BA41B22E9B7008F9F1A /* Sources */,
+				090E2BA51B22E9B7008F9F1A /* Frameworks */,
+				090E2BA61B22E9B7008F9F1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				090E2BAA1B22E9B7008F9F1A /* PBXTargetDependency */,
+			);
+			name = VoithonTests;
+			productName = VoithonTests;
+			productReference = 090E2BA81B22E9B7008F9F1A /* VoithonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		090E2B8B1B22E9B7008F9F1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = OhtaniShohe;
+				TargetAttributes = {
+					090E2B921B22E9B7008F9F1A = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					090E2BA71B22E9B7008F9F1A = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 090E2B921B22E9B7008F9F1A;
+					};
+				};
+			};
+			buildConfigurationList = 090E2B8E1B22E9B7008F9F1A /* Build configuration list for PBXProject "Voithon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 090E2B8A1B22E9B7008F9F1A;
+			productRefGroup = 090E2B941B22E9B7008F9F1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				090E2B921B22E9B7008F9F1A /* Voithon */,
+				090E2BA71B22E9B7008F9F1A /* VoithonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		090E2B911B22E9B7008F9F1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090E2B9E1B22E9B7008F9F1A /* Main.storyboard in Resources */,
+				090E2BA31B22E9B7008F9F1A /* LaunchScreen.xib in Resources */,
+				090E2BA01B22E9B7008F9F1A /* Images.xcassets in Resources */,
+				090E2BBD1B22EB72008F9F1A /* test.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090E2BA61B22E9B7008F9F1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		090E2B8F1B22E9B7008F9F1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090E2BC71B22FACB008F9F1A /* TopViewController.swift in Sources */,
+				090E2BBA1B22EA69008F9F1A /* RegistViewController.swift in Sources */,
+				090E2B991B22E9B7008F9F1A /* AppDelegate.swift in Sources */,
+				090E2BC51B22F981008F9F1A /* HistoryViewController.swift in Sources */,
+				090E2BC91B22FB51008F9F1A /* GoalSetViewController.swift in Sources */,
+				090E2BCC1B230E95008F9F1A /* UIColorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090E2BA41B22E9B7008F9F1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090E2BAF1B22E9B7008F9F1A /* VoithonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		090E2BAA1B22E9B7008F9F1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 090E2B921B22E9B7008F9F1A /* Voithon */;
+			targetProxy = 090E2BA91B22E9B7008F9F1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		090E2B9C1B22E9B7008F9F1A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				090E2B9D1B22E9B7008F9F1A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		090E2BA11B22E9B7008F9F1A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				090E2BA21B22E9B7008F9F1A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		090E2BB01B22E9B7008F9F1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		090E2BB11B22E9B7008F9F1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		090E2BB31B22E9B7008F9F1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Voithon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		090E2BB41B22E9B7008F9F1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Voithon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		090E2BB61B22E9B7008F9F1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VoithonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Voithon.app/Voithon";
+			};
+			name = Debug;
+		};
+		090E2BB71B22E9B7008F9F1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VoithonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Voithon.app/Voithon";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		090E2B8E1B22E9B7008F9F1A /* Build configuration list for PBXProject "Voithon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090E2BB01B22E9B7008F9F1A /* Debug */,
+				090E2BB11B22E9B7008F9F1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		090E2BB21B22E9B7008F9F1A /* Build configuration list for PBXNativeTarget "Voithon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090E2BB31B22E9B7008F9F1A /* Debug */,
+				090E2BB41B22E9B7008F9F1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		090E2BB51B22E9B7008F9F1A /* Build configuration list for PBXNativeTarget "VoithonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090E2BB61B22E9B7008F9F1A /* Debug */,
+				090E2BB71B22E9B7008F9F1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 090E2B8B1B22E9B7008F9F1A /* Project object */;
+}
