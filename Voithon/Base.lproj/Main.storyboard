@@ -181,6 +181,10 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="beginRun:" destination="PUs-MM-PUz" eventType="touchUpInside" id="FAD-bz-re3"/>
+                                    <segue destination="mxU-hR-Nxy" kind="push" id="d1i-jB-CrD"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dG2-Du-SvU">
                                 <rect key="frame" x="0.0" y="426" width="414" height="181"/>
@@ -196,13 +200,13 @@
                                             <constraint firstAttribute="width" secondItem="lDa-uK-dgw" secondAttribute="height" multiplier="1:1" id="vK7-Nb-mWe"/>
                                         </constraints>
                                     </view>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f9x-v7-d7K">
+                                    <pickerView tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f9x-v7-d7K">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="180"/>
                                     </pickerView>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aPT-Yn-Prm">
+                                    <pickerView tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aPT-Yn-Prm">
                                         <rect key="frame" x="90" y="0.0" width="89" height="180"/>
                                     </pickerView>
-                                    <pickerView tag="1" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="Jro-eY-hCI">
+                                    <pickerView tag="3" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="Jro-eY-hCI">
                                         <rect key="frame" x="189" y="0.0" width="90" height="180"/>
                                     </pickerView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xf-UX-wfN">
@@ -271,6 +275,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2IT-Ek-8oL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1483" y="852"/>
+        </scene>
+        <!--Goal View Controller-->
+        <scene sceneID="v0r-ZY-i1t">
+            <objects>
+                <viewController storyboardIdentifier="GoalViewController" id="mxU-hR-Nxy" customClass="GoalViewController" customModule="Voithon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nRj-KU-CGh"/>
+                        <viewControllerLayoutGuide type="bottom" id="KCM-O5-k3u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l3K-fd-daS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WeC-1C-cBJ">
+                                <rect key="frame" x="0.0" y="607" width="414" height="80"/>
+                                <color key="backgroundColor" red="0.62340852140000003" green="0.1241693333" blue="0.14050167929999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="ngw-jT-ul2"/>
+                                </constraints>
+                                <state key="normal" title="トップに戻る">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="beginRun:" destination="PUs-MM-PUz" eventType="touchUpInside" id="VXT-tW-s6v"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WeC-1C-cBJ" firstAttribute="leading" secondItem="l3K-fd-daS" secondAttribute="leading" id="QBV-oc-YLv"/>
+                            <constraint firstItem="KCM-O5-k3u" firstAttribute="top" secondItem="WeC-1C-cBJ" secondAttribute="bottom" id="QyJ-GW-gc1"/>
+                            <constraint firstAttribute="trailing" secondItem="WeC-1C-cBJ" secondAttribute="trailing" id="VRn-rk-dJs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="r7k-eR-otr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5kL-vF-RTC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2000" y="852"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ekx-bi-mNs">

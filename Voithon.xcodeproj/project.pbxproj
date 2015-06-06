@@ -18,6 +18,7 @@
 		090E2BC71B22FACB008F9F1A /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E2BC61B22FACB008F9F1A /* TopViewController.swift */; };
 		090E2BC91B22FB51008F9F1A /* GoalSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E2BC81B22FB51008F9F1A /* GoalSetViewController.swift */; };
 		090E2BCC1B230E95008F9F1A /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E2BCB1B230E95008F9F1A /* UIColorExtension.swift */; };
+		0967130B1B2316D0009AC467 /* GoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0967130A1B2316D0009AC467 /* GoalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		090E2BC61B22FACB008F9F1A /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		090E2BC81B22FB51008F9F1A /* GoalSetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalSetViewController.swift; sourceTree = "<group>"; };
 		090E2BCB1B230E95008F9F1A /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		0967130A1B2316D0009AC467 /* GoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 		090E2BB81B22E9ED008F9F1A /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				096713071B23162B009AC467 /* Goal */,
 				090E2BCA1B230E54008F9F1A /* Extension */,
 				090E2BBF1B22F2D7008F9F1A /* Top */,
 				090E2BBE1B22F1E1008F9F1A /* Regist */,
@@ -165,6 +168,14 @@
 				090E2BCB1B230E95008F9F1A /* UIColorExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		096713071B23162B009AC467 /* Goal */ = {
+			isa = PBXGroup;
+			children = (
+				0967130A1B2316D0009AC467 /* GoalViewController.swift */,
+			);
+			path = Goal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0967130B1B2316D0009AC467 /* GoalViewController.swift in Sources */,
 				090E2BC71B22FACB008F9F1A /* TopViewController.swift in Sources */,
 				090E2BBA1B22EA69008F9F1A /* RegistViewController.swift in Sources */,
 				090E2B991B22E9B7008F9F1A /* AppDelegate.swift in Sources */,
@@ -471,6 +483,7 @@
 				090E2BB41B22E9B7008F9F1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		090E2BB51B22E9B7008F9F1A /* Build configuration list for PBXNativeTarget "VoithonTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +492,7 @@
 				090E2BB71B22E9B7008F9F1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
