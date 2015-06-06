@@ -10,6 +10,9 @@ import UIKit
 
 class GoalSetViewController: UIViewController, UIPickerViewDelegate {
     
+    var pickerValueOne = 0
+    var pickerValueTwo = 0
+    var pickerValueThree = 0
     var goalPickerValues = ["0","1","2","3","4","5","6","7","8","9"]
     var goalPickerThreeValues = ["0","5"]
     
@@ -30,6 +33,9 @@ class GoalSetViewController: UIViewController, UIPickerViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func beginRun(sender: AnyObject) {
+        
+    }
 }
 
 extension GoalSetViewController: UIPickerViewDataSource {
@@ -40,7 +46,7 @@ extension GoalSetViewController: UIPickerViewDataSource {
     }
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerView.tag == 1 ? goalPickerThreeValues.count : goalPickerValues.count
+        return pickerView.tag == 3 ? goalPickerThreeValues.count : goalPickerValues.count
     }
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
@@ -48,7 +54,12 @@ extension GoalSetViewController: UIPickerViewDataSource {
     }
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        
+        switch pickerView.tag {
+        case 1: pickerValueOne = row
+        case 2: pickerValueTwo = row
+        case 3: pickerValueThree = row*5
+        default: break
+        }
     }
     
     func pickerView(pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
@@ -66,7 +77,7 @@ extension GoalSetViewController: UIPickerViewDataSource {
     }
     
     private func pickerText(#pickerView: UIPickerView, titleForRow row: Int) -> String! {
-        if pickerView.tag == 1 {
+        if pickerView.tag == 3 {
             switch row {
             case 0:
                 return goalPickerThreeValues[0] as String
