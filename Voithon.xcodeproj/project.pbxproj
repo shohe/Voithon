@@ -20,6 +20,7 @@
 		090E2BCC1B230E95008F9F1A /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E2BCB1B230E95008F9F1A /* UIColorExtension.swift */; };
 		0967130B1B2316D0009AC467 /* GoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0967130A1B2316D0009AC467 /* GoalViewController.swift */; };
 		0967130E1B232169009AC467 /* RunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0967130D1B232169009AC467 /* RunViewController.swift */; };
+		098A0D851B237D7B0026C176 /* VoithonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A0D841B237D7B0026C176 /* VoithonCell.swift */; };
 		6CCA9B99E1E787F13FC80919 /* libPods-Voithon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3726E36BA778215368F72E2F /* libPods-Voithon.a */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		090E2BCB1B230E95008F9F1A /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		0967130A1B2316D0009AC467 /* GoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalViewController.swift; sourceTree = "<group>"; };
 		0967130D1B232169009AC467 /* RunViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunViewController.swift; sourceTree = "<group>"; };
+		098A0D841B237D7B0026C176 /* VoithonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoithonCell.swift; sourceTree = "<group>"; };
 		09E6B8E31B2330AB0089CAA2 /* Voithon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Voithon-Bridging-Header.h"; sourceTree = "<group>"; };
 		3726E36BA778215368F72E2F /* libPods-Voithon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Voithon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C842CCE1D69B0C429A08CE4 /* Pods-Voithon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voithon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Voithon/Pods-Voithon.debug.xcconfig"; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				0967130A1B2316D0009AC467 /* GoalViewController.swift */,
+				098A0D841B237D7B0026C176 /* VoithonCell.swift */,
 			);
 			path = Goal;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				0967130B1B2316D0009AC467 /* GoalViewController.swift in Sources */,
 				090E2BC71B22FACB008F9F1A /* TopViewController.swift in Sources */,
 				090E2BBA1B22EA69008F9F1A /* RegistViewController.swift in Sources */,
+				098A0D851B237D7B0026C176 /* VoithonCell.swift in Sources */,
 				090E2B991B22E9B7008F9F1A /* AppDelegate.swift in Sources */,
 				090E2BC51B22F981008F9F1A /* HistoryViewController.swift in Sources */,
 				090E2BC91B22FB51008F9F1A /* GoalSetViewController.swift in Sources */,

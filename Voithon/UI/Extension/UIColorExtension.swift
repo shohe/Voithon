@@ -18,4 +18,7 @@ extension UIColor {
     class func VoithonRedDark() -> UIColor {
         return UIColor.rgb(r: 81, g: 17, b: 19, alpha: 1.0)
     }
+    class func VoithonThumbBorder() -> UIColor {
+        return UIColor.rgb(r: 203, g: 210, b: 212, alpha: 1.0)
+    }
 }
