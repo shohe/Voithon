@@ -37,8 +37,12 @@ extension Voithon.Request {
         }
         
         var URLRequest: NSURLRequest? {
-            var parameters = ["name": name, "pass": pass, "imgFile": imgFile!]
+            let img = PostData(data: UIImageJPEGRepresentation(imgFile, 1), mimeType: MimeType.ImageJpeg)
+            var parameters = ["name": name, "pass": pass, "imgFile": img.data]
             return Voithon.URLRequest(.POST, path: "/users/register", parameters: parameters)
+            
+            //var parameters = ["name": name, "pass": pass, "imgFile": imgFile!]
+            //return Voithon.URLRequest(.POST, path: "/users/register", parameters: parameters)
         }
         
         func responseFromError(object: AnyObject) -> NSError? {

@@ -84,8 +84,9 @@ class User {
     class func getName() -> String {
         let defaults = NSUserDefaults.standardUserDefaults()
         if let name: String = defaults.objectForKey(UserNameKey) as? String {
-            return name
+//            return name
         }
+        defaults.setObject(nil, forKey: UserNameKey)  // debug用
         return "ななし"
     }
 }

@@ -32,6 +32,8 @@
 		098A0DA11B23C55A0026C176 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A0DA01B23C55A0026C176 /* User.swift */; };
 		098A0DA31B23E5D80026C176 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A0DA21B23E5D80026C176 /* Friend.swift */; };
 		098A0DA51B23E9110026C176 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A0DA41B23E9110026C176 /* History.swift */; };
+		098A0DAB1B24159C0026C176 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 098A0DAA1B24159C0026C176 /* logo.png */; };
+		098A0DAD1B2416BA0026C176 /* 0_splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 098A0DAC1B2416BA0026C176 /* 0_splash.png */; };
 		6CCA9B99E1E787F13FC80919 /* libPods-Voithon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3726E36BA778215368F72E2F /* libPods-Voithon.a */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +77,8 @@
 		098A0DA01B23C55A0026C176 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		098A0DA21B23E5D80026C176 /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		098A0DA41B23E9110026C176 /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		098A0DAA1B24159C0026C176 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		098A0DAC1B2416BA0026C176 /* 0_splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0_splash.png; sourceTree = "<group>"; };
 		09E6B8E31B2330AB0089CAA2 /* Voithon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Voithon-Bridging-Header.h"; sourceTree = "<group>"; };
 		3726E36BA778215368F72E2F /* libPods-Voithon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Voithon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C842CCE1D69B0C429A08CE4 /* Pods-Voithon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voithon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Voithon/Pods-Voithon.debug.xcconfig"; sourceTree = "<group>"; };
@@ -177,6 +181,8 @@
 		090E2BBB1B22EB4F008F9F1A /* Resouces */ = {
 			isa = PBXGroup;
 			children = (
+				098A0DAC1B2416BA0026C176 /* 0_splash.png */,
+				098A0DAA1B24159C0026C176 /* logo.png */,
 				090E2BBC1B22EB72008F9F1A /* test.jpg */,
 			);
 			path = Resouces;
@@ -382,7 +388,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				090E2B9E1B22E9B7008F9F1A /* Main.storyboard in Resources */,
+				098A0DAB1B24159C0026C176 /* logo.png in Resources */,
 				090E2BA31B22E9B7008F9F1A /* LaunchScreen.xib in Resources */,
+				098A0DAD1B2416BA0026C176 /* 0_splash.png in Resources */,
 				090E2BA01B22E9B7008F9F1A /* Images.xcassets in Resources */,
 				090E2BBD1B22EB72008F9F1A /* test.jpg in Resources */,
 			);

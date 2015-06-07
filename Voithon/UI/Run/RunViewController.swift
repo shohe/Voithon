@@ -46,7 +46,6 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
         
         suru = AVSpeechSynthesizer()
         suru.delegate = self
-        suruTalk("こんにちは\(User.getName())さん。目標達成目指して頑張りましょう。")
     }
     
     override func didReceiveMemoryWarning() {
@@ -55,7 +54,8 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     }
 
     func initChart() {
-        gole = 100//Int(goleDistance*1000)
+        // 設定した距離
+        gole = 30//Int(goleDistance*1000)
         let chartSize = self.view.frame.width-40
         let frame = CGRectMake(center.x-chartSize/2, timecolon.frame.origin.y-chartSize-40, chartSize, chartSize)
         circleChart = PNCircleChart(frame: frame, total: NSNumber(integer: gole), current: NSNumber(integer: 0), clockwise: true, shadow: false, shadowColor: nil, displayCountingLabel: false, overrideLineWidth: NSNumber(integer: 40))
@@ -76,14 +76,18 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
         box.addSubview(left)
         
         goleLabel = UILabel(frame: CGRectMake(0, left.frame.height, box.frame.size.width,  box.frame.size.height/3*2-10))
-        goleLabel.text = (Int(goleDistance*1000)-gole < 10) ? "0"+String(stringInterpolationSegment: Int(goleDistance*1000)-gole)+"km" : String(stringInterpolationSegment: Int(goleDistance*1000)-gole)+"km"
         goleLabel.textColor = UIColor.VoithonRed()
         goleLabel.font = UIFont(name: "Arial-BoldMT", size: 40)
         goleLabel.textAlignment = NSTextAlignment.Center
+        
+        let gl = Float(gole) / 1000
+        goleLabel.text = String(format: "%.01f", gl)
+        goleLabel.text = (gl < 10) ? "0"+goleLabel.text!+"km" : goleLabel.text!+"km"
         box.addSubview(goleLabel)
     }
     
     func initTimeLabel() {
+        goleLabel.text = "00.0km"
         timeCount = 0
         isFirst = true
         center = CGPoint(x: self.view.center.x, y: self.view.center.y-80)
@@ -138,8 +142,8 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
     func suruTalk(talkText: String) {
         let utterance = AVSpeechUtterance(string: talkText)
         utterance.voice = AVSpeechSynthesisVoice(language: "ja-JP")
-        utterance.rate = 0.3
-        utterance.pitchMultiplier = 2.0
+        utterance.rate = 0.2
+        utterance.pitchMultiplier = 17
         suru.speakUtterance(utterance)
     }
     
@@ -184,6 +188,16 @@ class RunViewController: UIViewController, CLLocationManagerDelegate {
                 goleLabel.text = (gl < 10) ? "0"+goleLabel.text!+"km" : goleLabel.text!+"km"
             }
             
+        } else {
+            
+            let ido: Float = Float(manager.location.coordinate.latitude)
+            let kdo: Float = Float(manager.location.coordinate.longitude)
+            User.beginRun(User.getName(), target: Float(gole/1000), latitude: ido, longitude: kdo, success: { (result) -> Void in
+                
+                self.suruTalk("こんにちは\(User.getName())さん。目標達成目指して頑張りましょう。")
+            }, failure: { (error) -> Void in
+                println("error: \(error)")
+            })
         }
         isFirst = false
     }
@@ -205,8 +219,12 @@ extension RunViewController: UIAlertViewDelegate {
             }
             
             let okAction = UIAlertAction(title: "OK", style: .Default) { (action) -> Void in
-                self.myLocationManager.stopUpdatingLocation()
-                self.dismissViewControllerAnimated(true, completion: nil)
+                User.giveUp(User.getName(), success: { (result) -> Void in
+                    self.myLocationManager.stopUpdatingLocation()
+                    self.dismissViewControllerAnimated(true, completion: nil)
+                }, failure: { (error) -> Void in
+                    println("error: \(error)")
+                })
             }
             
             ac.addAction(cancelAction)
@@ -223,8 +241,12 @@ extension RunViewController: UIAlertViewDelegate {
             if (buttonIndex == alertView.cancelButtonIndex) {
                 println("Cancel button tapped.")
             } else {
-                myLocationManager.stopUpdatingLocation()
-                self.dismissViewControllerAnimated(true, completion: nil)
+                User.giveUp(User.getName(), success: { (result) -> Void in
+                    self.myLocationManager.stopUpdatingLocation()
+                    self.dismissViewControllerAnimated(true, completion: nil)
+                    }, failure: { (error) -> Void in
+                        println("error: \(error)")
+                })
             }
         }
     }

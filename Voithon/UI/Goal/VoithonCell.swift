@@ -26,10 +26,19 @@ class VoithonCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setCell(thumbnail: UIImage, place: String, name: String) {
-        self.thumbnail.image = thumbnail
+    func setCell(thumbnail: String, place: String, name: String) {
+        
+//        self.thumbnail.image = urlToImage(thumbnail)
         placeLabel.text = place
         nameLabel.text = name
+        
+        //img
+        let url = NSURL(string:thumbnail)
+        let req = NSURLRequest(URL:url!)
+        NSURLConnection.sendAsynchronousRequest(req, queue:NSOperationQueue.mainQueue()){(res, data, err) in
+            let image = UIImage(data:data)
+            self.thumbnail.image = image!
+        }
     }
     
     func thumbnailToCircle() {
@@ -37,6 +46,18 @@ class VoithonCell: UITableViewCell {
         self.thumbnail.layer.borderWidth = 3
         self.thumbnail.layer.cornerRadius = self.thumbnail.frame.size.width/2
         self.thumbnail.layer.masksToBounds = true
+    }
+    
+    func urlToImage(URL: String) -> UIImage? {
+        let url = NSURL(string:URL)
+        let req = NSURLRequest(URL:url!)
+        var img = UIImage()
+        
+        NSURLConnection.sendAsynchronousRequest(req, queue:NSOperationQueue.mainQueue()){(res, data, err) in
+            let image = UIImage(data:data)
+            img = image!
+        }
+        return img
     }
 
 }
