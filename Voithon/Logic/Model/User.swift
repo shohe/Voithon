@@ -54,6 +54,33 @@ class User {
         }
     }
     
+    class func finishRun(name: String, success:([Friend]) -> Void, failure: (NSError) -> Void) {
+        let request = Voithon.Request.FinishRun(name: name)
+        Voithon.sendRequest(request, success: { (responce) -> Void in
+            success(responce)
+        }) { (error) -> Void in
+            failure(error)
+        }
+    }
+    
+    class func giveUp(name: String, success:(Bool) -> Void, failure: (NSError) -> Void) {
+        let request = Voithon.Request.GiveUp(name: name)
+        Voithon.sendRequest(request, success: { (responce) -> Void in
+            success(responce)
+            }) { (error) -> Void in
+                failure(error)
+        }
+    }
+    
+    class func history (name: String, success:([History]) -> Void, failure: (NSError) -> Void) {
+        let request = Voithon.Request.Histories(name: name)
+        Voithon.sendRequest(request, success: { (responce) -> Void in
+            success(responce)
+        }) { (error) -> Void in
+            failure(error)
+        }
+    }
+    
     class func getName() -> String {
         let defaults = NSUserDefaults.standardUserDefaults()
         if let name: String = defaults.objectForKey(UserNameKey) as? String {
@@ -61,7 +88,6 @@ class User {
         }
         return "ななし"
     }
-
 }
 
 
