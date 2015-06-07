@@ -15,7 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // 初回起動ではない時
+        let defaults = NSUserDefaults.standardUserDefaults()
+        if defaults.objectForKey(UserNameKey) != nil {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let goalSetViewCtonroller = storyboard.instantiateViewControllerWithIdentifier("GoalSetViewController") as! GoalSetViewController
+            self.window?.rootViewController = goalSetViewCtonroller
+        }
+        
         return true
     }
 

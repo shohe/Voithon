@@ -21,6 +21,15 @@
 		0967130B1B2316D0009AC467 /* GoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0967130A1B2316D0009AC467 /* GoalViewController.swift */; };
 		0967130E1B232169009AC467 /* RunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0967130D1B232169009AC467 /* RunViewController.swift */; };
 		098A0D851B237D7B0026C176 /* VoithonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A0D841B237D7B0026C176 /* VoithonCell.swift */; };
+		098A0D8D1B23BDCD0026C176 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A0D8C1B23BDCD0026C176 /* API.swift */; };
+		098A0D8F1B23BE080026C176 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A0D8E1B23BE080026C176 /* StringExtension.swift */; };
+		098A0D921B23BE630026C176 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A0D911B23BE630026C176 /* PostData.swift */; };
+		098A0D941B23BE9B0026C176 /* ResponceBodyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A0D931B23BE9B0026C176 /* ResponceBodyParser.swift */; };
+		098A0D981B23BEF20026C176 /* json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A0D971B23BEF20026C176 /* json.swift */; };
+		098A0D9B1B23BF200026C176 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A0D9A1B23BF200026C176 /* Reachability.swift */; };
+		098A0D9D1B23BFAE0026C176 /* Voithon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A0D9C1B23BFAE0026C176 /* Voithon.swift */; };
+		098A0D9F1B23C0590026C176 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A0D9E1B23C0590026C176 /* APIError.swift */; };
+		098A0DA11B23C55A0026C176 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A0DA01B23C55A0026C176 /* User.swift */; };
 		6CCA9B99E1E787F13FC80919 /* libPods-Voithon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3726E36BA778215368F72E2F /* libPods-Voithon.a */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +62,15 @@
 		0967130A1B2316D0009AC467 /* GoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalViewController.swift; sourceTree = "<group>"; };
 		0967130D1B232169009AC467 /* RunViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunViewController.swift; sourceTree = "<group>"; };
 		098A0D841B237D7B0026C176 /* VoithonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoithonCell.swift; sourceTree = "<group>"; };
+		098A0D8C1B23BDCD0026C176 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		098A0D8E1B23BE080026C176 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		098A0D911B23BE630026C176 /* PostData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		098A0D931B23BE9B0026C176 /* ResponceBodyParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponceBodyParser.swift; sourceTree = "<group>"; };
+		098A0D971B23BEF20026C176 /* json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = json.swift; sourceTree = "<group>"; };
+		098A0D9A1B23BF200026C176 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		098A0D9C1B23BFAE0026C176 /* Voithon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Voithon.swift; sourceTree = "<group>"; };
+		098A0D9E1B23C0590026C176 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		098A0DA01B23C55A0026C176 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		09E6B8E31B2330AB0089CAA2 /* Voithon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Voithon-Bridging-Header.h"; sourceTree = "<group>"; };
 		3726E36BA778215368F72E2F /* libPods-Voithon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Voithon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C842CCE1D69B0C429A08CE4 /* Pods-Voithon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voithon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Voithon/Pods-Voithon.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +119,8 @@
 		090E2B951B22E9B7008F9F1A /* Voithon */ = {
 			isa = PBXGroup;
 			children = (
-				0967130F1B2324F7009AC467 /* Library */,
+				098A0D951B23BEC80026C176 /* Library */,
+				098A0D8A1B23BD6B0026C176 /* Logic */,
 				090E2BB81B22E9ED008F9F1A /* UI */,
 				090E2B981B22E9B7008F9F1A /* AppDelegate.swift */,
 				090E2B9C1B22E9B7008F9F1A /* Main.storyboard */,
@@ -181,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				090E2BCB1B230E95008F9F1A /* UIColorExtension.swift */,
+				098A0D8E1B23BE080026C176 /* StringExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -202,11 +222,58 @@
 			path = Run;
 			sourceTree = "<group>";
 		};
-		0967130F1B2324F7009AC467 /* Library */ = {
+		098A0D8A1B23BD6B0026C176 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				098A0D901B23BE390026C176 /* Model */,
+				098A0D8B1B23BD8D0026C176 /* API */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		098A0D8B1B23BD8D0026C176 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				098A0D8C1B23BDCD0026C176 /* API.swift */,
+				098A0D9C1B23BFAE0026C176 /* Voithon.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		098A0D901B23BE390026C176 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				098A0D911B23BE630026C176 /* PostData.swift */,
+				098A0D931B23BE9B0026C176 /* ResponceBodyParser.swift */,
+				098A0D9E1B23C0590026C176 /* APIError.swift */,
+				098A0DA01B23C55A0026C176 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		098A0D951B23BEC80026C176 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				098A0D991B23BF200026C176 /* reachability */,
+				098A0D961B23BEF20026C176 /* swift-json */,
 			);
 			path = Library;
+			sourceTree = "<group>";
+		};
+		098A0D961B23BEF20026C176 /* swift-json */ = {
+			isa = PBXGroup;
+			children = (
+				098A0D971B23BEF20026C176 /* json.swift */,
+			);
+			path = "swift-json";
+			sourceTree = "<group>";
+		};
+		098A0D991B23BF200026C176 /* reachability */ = {
+			isa = PBXGroup;
+			children = (
+				098A0D9A1B23BF200026C176 /* Reachability.swift */,
+			);
+			path = reachability;
 			sourceTree = "<group>";
 		};
 		22CFC4CEDFBF5594457BCEC9 /* Frameworks */ = {
@@ -363,14 +430,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				0967130B1B2316D0009AC467 /* GoalViewController.swift in Sources */,
+				098A0D921B23BE630026C176 /* PostData.swift in Sources */,
 				090E2BC71B22FACB008F9F1A /* TopViewController.swift in Sources */,
+				098A0D9F1B23C0590026C176 /* APIError.swift in Sources */,
+				098A0D981B23BEF20026C176 /* json.swift in Sources */,
 				090E2BBA1B22EA69008F9F1A /* RegistViewController.swift in Sources */,
 				098A0D851B237D7B0026C176 /* VoithonCell.swift in Sources */,
+				098A0D8D1B23BDCD0026C176 /* API.swift in Sources */,
+				098A0D941B23BE9B0026C176 /* ResponceBodyParser.swift in Sources */,
+				098A0D9B1B23BF200026C176 /* Reachability.swift in Sources */,
 				090E2B991B22E9B7008F9F1A /* AppDelegate.swift in Sources */,
 				090E2BC51B22F981008F9F1A /* HistoryViewController.swift in Sources */,
 				090E2BC91B22FB51008F9F1A /* GoalSetViewController.swift in Sources */,
 				0967130E1B232169009AC467 /* RunViewController.swift in Sources */,
+				098A0DA11B23C55A0026C176 /* User.swift in Sources */,
+				098A0D8F1B23BE080026C176 /* StringExtension.swift in Sources */,
 				090E2BCC1B230E95008F9F1A /* UIColorExtension.swift in Sources */,
+				098A0D9D1B23BFAE0026C176 /* Voithon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

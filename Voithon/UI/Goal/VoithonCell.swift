@@ -37,7 +37,6 @@ class VoithonCell: UITableViewCell {
         self.thumbnail.layer.borderWidth = 3
         self.thumbnail.layer.cornerRadius = self.thumbnail.frame.size.width/2
         self.thumbnail.layer.masksToBounds = true
-
     }
 
 }
